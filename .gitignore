@@ -1,0 +1,6 @@
+**/vendor
+**.cache
+example/require/composer.json
+example/require/composer.lock
+runtime.env
+work/3_dump-autoload/.composer-cache

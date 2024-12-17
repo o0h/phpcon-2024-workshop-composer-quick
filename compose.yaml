@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    volumes:
+      - ./:/opt
+    working_dir: /opt
+    env_file:
+      - runtime.env
+    environment:
+      - PHP_CS_FIXER_IGNORE_ENV=1
