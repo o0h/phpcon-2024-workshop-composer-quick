@@ -146,7 +146,7 @@ test(
             sprintf('GITHUB_OAUTH_TOKENが正しく設定されていない可能性があります(%s %s)', $status, $message),
             [
                 'トークンを再生成して、.runtime.envファイルを更新してください',
-                'トークンは https://github.com/settings/tokens/new?scopes=public_repo&description=Phpcon-2024-Tinyposer で作成できます'
+                'トークンは https://github.com/settings/tokens/new?scopes=repo&description=Phpcon-2024-Tinyposer で作成できます'
             ],
         );
     }
