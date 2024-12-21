@@ -22,7 +22,7 @@ https://github.com/settings/tokens/new?scopes=public_repo&description=Phpcon-202
 **(3)**  
 このレポジトリをcloneしてください。
 
-**(4)**
+**(4)**  
 ルートディレクトリにある `runtime.env.example` をコピーして、 `runtime.env` という名前で保存してください。  
 `runtime.env` に、先ほど取得したGitHub OAuth トークンを書き込みます。  
 ```
