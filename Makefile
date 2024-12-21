@@ -1,4 +1,4 @@
-.PHONY: default help init sh work1 work2 work3
+.PHONY: default help init sh work1 work2 work3 example test
 
 DOCKER_COMPOSE := docker compose
 DOCKER_COMPOSE_RUN := docker compose run --rm

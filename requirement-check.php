@@ -103,7 +103,7 @@ test(
         err(
             'runtime.envファイルが存在しません',
             [
-                '.runtime.env.exampleをコピーして、.env.exampleファイルを作成してください',
+                'runtime.env.exampleをコピーして、runtime.envファイルを作成してください',
             ],
         );
     }
@@ -117,7 +117,7 @@ test(
             err(
                 'GITHUB_OAUTH_TOKENが設定されていません',
                 [
-                    '.runtime.envファイルの内容を確認してください',
+                    'runtime.envファイルの内容を確認してください',
                     'トークンは https://github.com/settings/tokens/new?scopes=public_repo&description=Phpcon-2024-Tinyposer で作成できます'
                 ],
             );
@@ -145,8 +145,8 @@ test(
         err(
             sprintf('GITHUB_OAUTH_TOKENが正しく設定されていない可能性があります(%s %s)', $status, $message),
             [
-                'トークンを再生成して、.runtime.envファイルを更新してください',
-                'トークンは https://github.com/settings/tokens/new?scopes=repo&description=Phpcon-2024-Tinyposer で作成できます'
+                'トークンを再生成して、runtime.envファイルを更新してください',
+                'トークンは https://github.com/settings/tokens/new?scopes=public_repo&description=Phpcon-2024-Tinyposer で作成できます'
             ],
         );
     }

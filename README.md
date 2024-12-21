@@ -4,6 +4,9 @@ PHP Conference Japan 2024 のハンズオン用レポジトリです。
 see: https://fortee.jp/phpcon-2024/proposal/fd511b78-3741-4206-b90c-567d0d043698
 
 ## 利用方法
+
+より詳細な情報は https://zenn.dev/o0h/books/phpcon-2024-composer-ws を参照してください。
+
 ### 前提条件・セットアップ
 **(1)**  
 Dockerコンテナを用いた開発作業を想定しています。  
@@ -28,12 +31,19 @@ GITHUB_OAUTH_TOKEN=[取得したトークン]
 という形式で、セットしてください。
 
 ### 動作確認
+
 環境構築を行います。
 ルートディレクトリ上で、次のコマンドを実行してください。  
 (Dockerコンテナ内ではなく、ホスト上での操作になります)
 
 ```sh
 make init
+```
+
+makeコマンドが利用できない場合は、Docker Composeを利用して操作してください
+
+```sh
+docker compose build
 ```
 
 正常に完了したら、作業に必要な要件を満たしているかをチェックします。  
@@ -43,7 +53,14 @@ make init
 make test
 ```
 
+もしくは
+
+```sh
+docker compose run --rm app php requirement-check.php
+```
+
 `💯 おめでとうございます！全ての要件を満たしています！` と表示されたら、環境構築は完了です。
 
 ## サポート
+
 うまく動かなかった場合は、当レポジトリのIssueでお知らせください。

@@ -1,4 +1,4 @@
-FROM composer:2.8.3
+FROM composer:2.8.4
 
 # php-ext
 RUN curl -L --output /usr/local/bin/pie https://github.com/php/pie/releases/download/0.2.0/pie.phar \
