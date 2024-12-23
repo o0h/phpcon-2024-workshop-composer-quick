@@ -1,18 +1,17 @@
+# --- root, global --- #
 **/vendor
-!work/3_dump-autoload/vendor
-!example/3_dump-autoload/vendor
-
 **/*.cache
 runtime.env
-composer.json
-composer.lock
-!example/1_install/composer.json
-!example/1_install/composer.lock
-!work/1_install/composer.json
-!work/1_install/composer.lock
-work/3_dump-autoload/.composer-cache
-example/3_dump-autoload/.composer-cache
-work/3_dump-autoload/vendor/autoload.php
-work/3_dump-autoload/vendor/autoload_classmap_psr4.php
-work/3_dump-autoload/vendor/autoload_files.php
-work/3_dump-autoload/vendor/ClassLoader.php
+
+
+# --- works --- #
+
+# work_1
+
+# work_2
+*/2_require/composer.json
+*/2_require/composer.lock
+
+
+# work_3
+*/3_dump-autoload/.composer-cache
