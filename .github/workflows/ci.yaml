@@ -13,6 +13,11 @@ jobs:
     - name: Set up Docker
       uses: docker/setup-buildx-action@v2
 
+    - name: Create .env
+      run: |
+        cp runtime.env.example runtime.env
+        sed -i 's/PUT_YOUR_TOKEN/${{ secrets.GITHUB_TOKEN }}/' runtime.env
+
     - name: Build with make
       run: make init
 
