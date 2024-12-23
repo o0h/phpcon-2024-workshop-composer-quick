@@ -1,0 +1,11 @@
+{
+    "require": {
+        "psr/log": "3.0.2",
+        "symfony/polyfill-mbstring": "v1.31.0",
+        "symfony/polyfill-php84": "^1.31"
+    },
+    "config": {
+        "sort-packages": true,
+        "cache-dir" : "./.composer-cache"
+    }
+}
